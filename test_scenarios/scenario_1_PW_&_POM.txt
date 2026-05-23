@@ -1,0 +1,9 @@
+Generate a playwright test for the following scenario:
+1. Navigate to automationpanda.com/testing
+2. Verify page title contains "Testing"
+3. Verify quote "In God, we trust. In all else, we test." is visible
+4. Verify 3 categories are shown (Functional, Performance, Experimental)
+5. Verify "Automation" tag
+6. Scroll to "Major Posts" section
+7. Verify at least 10 article links are present
+8. Click first article and verify it opens correctly

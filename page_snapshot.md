@@ -1,0 +1,788 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "Automation Panda A blog for software development and testing" [ref=e4] [cursor=pointer]:
+        - /url: https://automationpanda.com/
+        - heading "Automation Panda" [level=1] [ref=e5]
+        - heading "A blog for software development and testing" [level=2] [ref=e6]
+      - navigation [ref=e8]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Home" [ref=e12] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e13]:
+            - link "About" [ref=e14] [cursor=pointer]:
+              - /url: https://automationpanda.com/about/
+          - listitem [ref=e15]:
+            - link "Contact" [ref=e16] [cursor=pointer]:
+              - /url: https://automationpanda.com/contact/
+          - listitem [ref=e17]:
+            - link "Speaking" [ref=e18] [cursor=pointer]:
+              - /url: https://automationpanda.com/speaking/
+          - listitem [ref=e19]:
+            - link "Teaching" [ref=e20] [cursor=pointer]:
+              - /url: https://automationpanda.com/teaching/
+          - listitem [ref=e21]:
+            - link "BDD" [ref=e22] [cursor=pointer]:
+              - /url: https://automationpanda.com/bdd/
+          - listitem [ref=e23]:
+            - link "Development" [ref=e24] [cursor=pointer]:
+              - /url: https://automationpanda.com/development/
+          - listitem [ref=e25]:
+            - link "Testing" [ref=e26] [cursor=pointer]:
+              - /url: https://automationpanda.com/testing/
+          - listitem [ref=e27]:
+            - link "Python" [ref=e28] [cursor=pointer]:
+              - /url: https://automationpanda.com/python/
+        - search [ref=e29]:
+          - generic [ref=e30]:
+            - generic [ref=e31]: "Search for:"
+            - searchbox "Search for:" [ref=e32] [cursor=pointer]
+    - generic [ref=e33]:
+      - main [ref=e35]:
+        - article [ref=e36]:
+          - heading "Testing" [level=1] [ref=e39]
+          - generic [ref=e40]:
+            - blockquote [ref=e41]:
+              - paragraph [ref=e42]: “In God, we trust. In all else, we test.” (Unknown)
+            - heading "What is Software Testing?" [level=2] [ref=e43]
+            - paragraph [ref=e44]:
+              - link "Software testing" [ref=e45] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Software_testing
+              - text: "is the practice of:"
+            - list [ref=e46]:
+              - listitem [ref=e47]:
+                - strong [ref=e48]: validating goodness
+                - text: and
+                - strong [ref=e49]: identifying badness
+              - listitem [ref=e50]:
+                - text: in software
+                - strong [ref=e51]: product code and features
+              - listitem [ref=e52]:
+                - text: for the purpose of
+                - strong [ref=e53]: enforcing high quality standards
+            - paragraph [ref=e54]: "There are 3 fundamental categories of software testing:"
+            - list [ref=e55]:
+              - listitem [ref=e56]:
+                - strong [ref=e57]: Functional
+                - text: ": Does the software work"
+                - emphasis [ref=e58]: correctly
+                - text: "?"
+              - listitem [ref=e59]:
+                - strong [ref=e60]: Performance
+                - text: ": Does the software work within"
+                - emphasis [ref=e61]: desired system metrics
+                - text: "?"
+              - listitem [ref=e62]:
+                - strong [ref=e63]: Experimental
+                - text: ": Does the software work with"
+                - emphasis [ref=e64]: improved feature metrics after a change
+                - text: "?"
+            - heading "Functional Testing" [level=2] [ref=e65]
+            - paragraph [ref=e66]:
+              - text: Functional testing determines if software features work
+              - emphasis [ref=e67]: correctly
+              - text: . They yield a deterministic pass/fail result.
+            - paragraph [ref=e68]: "“Correctness” means mutually-agreed goodness. It may be determined by:"
+            - list [ref=e69]:
+              - listitem [ref=e70]: requirements
+              - listitem [ref=e71]: specifications
+              - listitem [ref=e72]: test cases and plans
+              - listitem [ref=e73]: domain knowledge
+              - listitem [ref=e74]: user expectations
+              - listitem [ref=e75]: common sense
+            - heading "Modes and Methods" [level=3] [ref=e76]
+            - paragraph [ref=e77]:
+              - text: There are two
+              - emphasis [ref=e78]: modes
+              - text: "of functional testing:"
+            - list [ref=e79]:
+              - listitem [ref=e80]:
+                - strong [ref=e81]: Scripted
+                - text: ": Test cases are written, reviewed, and then run according to plan."
+              - listitem [ref=e82]:
+                - strong [ref=e83]: Exploratory
+                - text: ": Experts interact with product features without a script in attempts to uncover issues."
+            - paragraph [ref=e84]:
+              - text: There are also two
+              - emphasis [ref=e85]: methods
+              - text: "for running functional tests:"
+            - list [ref=e86]:
+              - listitem [ref=e87]:
+                - strong [ref=e88]: Automated
+                - text: ": Test software runs tests automatically without manual intervention."
+                - list [ref=e89]:
+                  - listitem [ref=e90]:
+                    - text: Best at being
+                    - emphasis [ref=e91]: defensive
+                    - text: to protect software against regressions.
+                  - listitem [ref=e92]: A good fit for scripted tests.
+              - listitem [ref=e93]:
+                - strong [ref=e94]: Manual
+                - text: ": A human tester exercises system behavior through direct interaction."
+                - list [ref=e95]:
+                  - listitem [ref=e96]:
+                    - text: Best at being
+                    - emphasis [ref=e97]: offensive
+                    - text: to find bugs in new features.
+                  - listitem [ref=e98]: A good fit for exploratory tests and for scripted tests that are difficult to automate.
+            - paragraph [ref=e99]: "The methods and modes are complementary: one does not supplant another."
+            - heading "Levels and Layers" [level=3] [ref=e100]
+            - paragraph [ref=e101]:
+              - text: There are two
+              - emphasis [ref=e102]: access levels
+              - text: "for functional testing:"
+            - list [ref=e103]:
+              - listitem [ref=e104]:
+                - strong [ref=e105]: White-box
+                - text: ": Tests interact directly with product code, thus covering"
+                - emphasis [ref=e106]: code
+                - text: .
+              - listitem [ref=e107]:
+                - strong [ref=e108]: Black-box
+                - text: ": Tests interact with a live instance of the built product, thus covering"
+                - emphasis [ref=e109]: features
+                - text: .
+            - paragraph [ref=e110]:
+              - text: There are also three
+              - emphasis [ref=e111]: layers
+              - text: "for functional testing:"
+            - list [ref=e112]:
+              - listitem [ref=e113]:
+                - strong [ref=e114]: Unit
+                - text: ": Very short white-box tests for individual “units” (functions, methods, or classes) of code."
+              - listitem [ref=e115]:
+                - strong [ref=e116]: Integration
+                - text: ": Black-box tests that cover where two components come together (often service layer)."
+              - listitem [ref=e117]:
+                - strong [ref=e118]: End-to-End
+                - text: ": Lengthier black-box tests that cover an execution path through a system (often Web UI layer)."
+            - paragraph [ref=e119]:
+              - generic [ref=e120]:
+                - text: These three layers form the
+                - link "Testing Pyramid" [ref=e121] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2018/08/01/the-testing-pyramid/
+                - text: .
+            - heading "Test Automation" [level=3] [ref=e122]
+            - paragraph [ref=e123]:
+              - generic [ref=e124]:
+                - link "Test automation" [ref=e125] [cursor=pointer]:
+                  - /url: https://en.wikipedia.org/wiki/Test_automation
+                - text: is indispensable for software development success. Tests should be automated when they give positive returns-on-investment.
+            - figure [ref=e126]:
+              - table [ref=e127]:
+                - rowgroup [ref=e128]:
+                  - row "Advantages Challenges" [ref=e129]:
+                    - columnheader "Advantages" [ref=e130]
+                    - columnheader "Challenges" [ref=e131]
+                  - row "Tests can be rerun at any time the same way. Tests can run as part of CI/CD. Teams can run more tests in less time. Setup and cleanup can also be automated. Frameworks can provide reports, logs, and screenshots. Manual testers can focus on exploratory testing. Test automation is software development and requires the same skills and practices. Automation is inherently fragile because it depends upon ever-changing products. Interruptions and intermittent failures can easily break automated tests. Tests should be automated at the same time the feature is developed to give the best feedback." [ref=e132]:
+                    - cell "Tests can be rerun at any time the same way. Tests can run as part of CI/CD. Teams can run more tests in less time. Setup and cleanup can also be automated. Frameworks can provide reports, logs, and screenshots. Manual testers can focus on exploratory testing." [ref=e133]:
+                      - list [ref=e134]:
+                        - listitem [ref=e135]: Tests can be rerun at any time the same way.
+                        - listitem [ref=e136]:
+                          - text: Tests can run as part of
+                          - link "CI" [ref=e137] [cursor=pointer]:
+                            - /url: https://en.wikipedia.org/wiki/Continuous_integration
+                          - text: /
+                          - link "CD" [ref=e138] [cursor=pointer]:
+                            - /url: https://en.wikipedia.org/wiki/Continuous_delivery
+                          - text: .
+                        - listitem [ref=e139]: Teams can run more tests in less time.
+                        - listitem [ref=e140]: Setup and cleanup can also be automated.
+                        - listitem [ref=e141]: Frameworks can provide reports, logs, and screenshots.
+                        - listitem [ref=e142]: Manual testers can focus on exploratory testing.
+                    - cell "Test automation is software development and requires the same skills and practices. Automation is inherently fragile because it depends upon ever-changing products. Interruptions and intermittent failures can easily break automated tests. Tests should be automated at the same time the feature is developed to give the best feedback." [ref=e143]:
+                      - list [ref=e144]:
+                        - listitem [ref=e145]:
+                          - text: Test automation
+                          - emphasis [ref=e146]: is
+                          - text: software development and requires the same skills and practices.
+                        - listitem [ref=e147]: Automation is inherently fragile because it depends upon ever-changing products.
+                        - listitem [ref=e148]: Interruptions and intermittent failures can easily break automated tests.
+                        - listitem [ref=e149]: Tests should be automated at the same time the feature is developed to give the best feedback.
+            - paragraph [ref=e150]: Functional test frameworks and related packages are available in all major programming languages. Don’t reinvent wheels.
+            - figure [ref=e151]:
+              - table [ref=e152]:
+                - rowgroup [ref=e153]:
+                  - row "Language Frameworks" [ref=e154]:
+                    - columnheader "Language" [ref=e155]
+                    - columnheader "Frameworks" [ref=e156]
+                - rowgroup [ref=e157]:
+                  - row "C++ Catch Google Test" [ref=e158]:
+                    - cell "C++" [ref=e159]
+                    - cell "Catch Google Test" [ref=e160]:
+                      - list [ref=e161]:
+                        - listitem [ref=e162]:
+                          - link "Catch" [ref=e163] [cursor=pointer]:
+                            - /url: https://github.com/catchorg/Catch2
+                        - listitem [ref=e164]:
+                          - link "Google Test" [ref=e165] [cursor=pointer]:
+                            - /url: https://github.com/google/googletest
+                  - row "C# MsTest NUnit SpecFlow xUnit.net" [ref=e166]:
+                    - cell "C#" [ref=e167]
+                    - cell "MsTest NUnit SpecFlow xUnit.net" [ref=e168]:
+                      - list [ref=e169]:
+                        - listitem [ref=e170]:
+                          - link "MsTest" [ref=e171] [cursor=pointer]:
+                            - /url: https://en.wikipedia.org/wiki/Visual_Studio_Unit_Testing_Framework
+                        - listitem [ref=e172]:
+                          - link "NUnit" [ref=e173] [cursor=pointer]:
+                            - /url: https://nunit.org/
+                        - listitem [ref=e174]:
+                          - link "SpecFlow" [ref=e175] [cursor=pointer]:
+                            - /url: https://specflow.org/
+                        - listitem [ref=e176]:
+                          - link "xUnit.net" [ref=e177] [cursor=pointer]:
+                            - /url: https://xunit.github.io/
+                  - row "Java Cucumber-JVM JBehave JUnit Serenity BDD TestNG" [ref=e178]:
+                    - cell "Java" [ref=e179]
+                    - cell "Cucumber-JVM JBehave JUnit Serenity BDD TestNG" [ref=e180]:
+                      - list [ref=e181]:
+                        - listitem [ref=e182]:
+                          - link "Cucumber-JVM" [ref=e183] [cursor=pointer]:
+                            - /url: https://github.com/cucumber/cucumber-jvm
+                        - listitem [ref=e184]:
+                          - link "JBehave" [ref=e185] [cursor=pointer]:
+                            - /url: https://jbehave.org/
+                        - listitem [ref=e186]:
+                          - link "JUnit" [ref=e187] [cursor=pointer]:
+                            - /url: https://junit.org/
+                        - listitem [ref=e188]:
+                          - link "Serenity BDD" [ref=e189] [cursor=pointer]:
+                            - /url: http://thucydides.info/docs/serenity-staging/
+                        - listitem [ref=e190]:
+                          - link "TestNG" [ref=e191] [cursor=pointer]:
+                            - /url: https://testng.org/
+                  - row "JavaScript CucumberJS Jasmine Karma Mocha Protractor Serenity/JS" [ref=e192]:
+                    - cell "JavaScript" [ref=e193]
+                    - cell "CucumberJS Jasmine Karma Mocha Protractor Serenity/JS" [ref=e194]:
+                      - list [ref=e195]:
+                        - listitem [ref=e196]:
+                          - link "CucumberJS" [ref=e197] [cursor=pointer]:
+                            - /url: https://github.com/cucumber/cucumber-js
+                        - listitem [ref=e198]:
+                          - link "Jasmine" [ref=e199] [cursor=pointer]:
+                            - /url: https://jasmine.github.io/
+                        - listitem [ref=e200]:
+                          - link "Karma" [ref=e201] [cursor=pointer]:
+                            - /url: https://karma-runner.github.io/2.0/index.html
+                        - listitem [ref=e202]:
+                          - link "Mocha" [ref=e203] [cursor=pointer]:
+                            - /url: https://mochajs.org/
+                        - listitem [ref=e204]:
+                          - link "Protractor" [ref=e205] [cursor=pointer]:
+                            - /url: http://www.protractortest.org/
+                        - listitem [ref=e206]:
+                          - link "Serenity/JS" [ref=e207] [cursor=pointer]:
+                            - /url: https://serenity-js.org/
+                  - row "Ruby Cucumber RSpec Shoulda Test::Unit" [ref=e208]:
+                    - cell "Ruby" [ref=e209]
+                    - cell "Cucumber RSpec Shoulda Test::Unit" [ref=e210]:
+                      - list [ref=e211]:
+                        - listitem [ref=e212]:
+                          - link "Cucumber" [ref=e213] [cursor=pointer]:
+                            - /url: https://cucumber.io/
+                        - listitem [ref=e214]:
+                          - link "RSpec" [ref=e215] [cursor=pointer]:
+                            - /url: http://rspec.info/
+                        - listitem [ref=e216]:
+                          - link "Shoulda" [ref=e217] [cursor=pointer]:
+                            - /url: https://github.com/thoughtbot/shoulda
+                        - listitem [ref=e218]:
+                          - link "Test::Unit" [ref=e219] [cursor=pointer]:
+                            - /url: http://ruby-doc.org/stdlib-1.8.7/libdoc/test/unit/rdoc/Test/Unit.html
+                  - row "Perl Test Anything Protocol Test::More Test::Simple" [ref=e220]:
+                    - cell "Perl" [ref=e221]
+                    - cell "Test Anything Protocol Test::More Test::Simple" [ref=e222]:
+                      - list [ref=e223]:
+                        - listitem [ref=e224]:
+                          - link "Test Anything Protocol" [ref=e225] [cursor=pointer]:
+                            - /url: https://en.wikipedia.org/wiki/Test_Anything_Protocol
+                          - list [ref=e226]:
+                            - listitem [ref=e227]:
+                              - link "Test::More" [ref=e228] [cursor=pointer]:
+                                - /url: https://perldoc.perl.org/Test/More.html
+                            - listitem [ref=e229]:
+                              - link "Test::Simple" [ref=e230] [cursor=pointer]:
+                                - /url: https://perldoc.perl.org/Test/Simple.html
+                  - row "PHP Behat" [ref=e231]:
+                    - cell "PHP" [ref=e232]
+                    - cell "Behat" [ref=e233]:
+                      - list [ref=e234]:
+                        - listitem [ref=e235]:
+                          - link "Behat" [ref=e236] [cursor=pointer]:
+                            - /url: http://behat.org/
+                  - row "Python behave pytest unittest" [ref=e237]:
+                    - cell "Python" [ref=e238]
+                    - cell "behave pytest unittest" [ref=e239]:
+                      - list [ref=e240]:
+                        - listitem [ref=e241]:
+                          - link "behave" [ref=e242] [cursor=pointer]:
+                            - /url: http://pythonhosted.org/behave/
+                        - listitem [ref=e243]:
+                          - link "pytest" [ref=e244] [cursor=pointer]:
+                            - /url: http://doc.pytest.org/en/latest/
+                        - listitem [ref=e245]:
+                          - link "unittest" [ref=e246] [cursor=pointer]:
+                            - /url: https://docs.python.org/3/library/unittest.html
+                  - row "Scala ScalaTest" [ref=e247]:
+                    - cell "Scala" [ref=e248]
+                    - cell "ScalaTest" [ref=e249]:
+                      - list [ref=e250]:
+                        - listitem [ref=e251]:
+                          - link "ScalaTest" [ref=e252] [cursor=pointer]:
+                            - /url: http://www.scalatest.org/
+            - heading "Advice" [level=3] [ref=e253]
+            - list [ref=e254]:
+              - listitem [ref=e255]: Each test should focus on one main behavior or variation.
+              - listitem [ref=e256]: Tests should run independently of each other. (They should be runnable in any order.)
+              - listitem [ref=e257]: Tests should cover behaviors as close to the point of origin as possible.
+              - listitem [ref=e258]: Tests should be self-descriptive and intuitively understandable.
+              - listitem [ref=e259]: Count(unit) > Count(integration) > Count(end-to-end)
+              - listitem [ref=e260]:
+                - generic [ref=e261]:
+                  - text: Target near-100%
+                  - link "code coverage" [ref=e262] [cursor=pointer]:
+                    - /url: https://en.wikipedia.org/wiki/Code_coverage
+                  - text: for unit tests.
+              - listitem [ref=e263]: Do not automate every test – use a risk-based strategy with ROI.
+              - listitem [ref=e264]:
+                - generic [ref=e265]:
+                  - text: Try to
+                  - link "run automated tests in parallel" [ref=e266] [cursor=pointer]:
+                    - /url: https://automationpanda.com/2018/01/21/to-infinity-and-beyond-a-guide-to-parallel-testing/
+                  - text: ", especially in CI/CD."
+            - paragraph [ref=e267]:
+              - text: Looking for free courses on test automation? Check out
+              - link "Test Automation University" [ref=e268] [cursor=pointer]:
+                - /url: https://testautomationu.applitools.com/
+              - text: "!"
+            - heading "Performance Testing" [level=2] [ref=e269]
+            - paragraph [ref=e270]:
+              - generic [ref=e271]:
+                - text: Performance testing determines if a software product works
+                - emphasis [ref=e272]: well
+                - text: . As a precondition, features must work correctly (meaning, functional tests pass).
+            - paragraph [ref=e273]:
+              - generic [ref=e274]:
+                - text: Performance testing should
+                - emphasis [ref=e275]: not
+                - text: use functional testing frameworks. They should use performance-specific tools like
+                - link "JMeter" [ref=e276] [cursor=pointer]:
+                  - /url: https://jmeter.apache.org/
+                - text: or
+                - link "Visual Studio load testing" [ref=e277] [cursor=pointer]:
+                  - /url: https://docs.microsoft.com/en-us/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts
+                - text: .
+            - paragraph [ref=e278]:
+              - text: “Good” performance means minimal impact to the 4 primary
+              - link "software performance metrics" [ref=e279] [cursor=pointer]:
+                - /url: https://automationpanda.com/2018/04/11/quality-metrics-101-product-quality/
+              - text: "in the system under test:"
+            - list [ref=e280]:
+              - listitem [ref=e281]: Processor Usage
+              - listitem [ref=e282]: Memory Usage
+              - listitem [ref=e283]: Response Time
+              - listitem [ref=e284]: Throughput
+            - heading "Major Posts" [level=2] [ref=e285]
+            - list [ref=e286]:
+              - listitem [ref=e287]:
+                - link "5 Things I Love About SpecFlow" [ref=e288] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2018/05/10/5-things-i-love-about-specflow/
+              - listitem [ref=e289]:
+                - link "10 Gotchas for Automation Code Reviews" [ref=e290] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2017/05/08/10-gotchas-for-automation-code-reviews/
+              - listitem [ref=e291]:
+                - link "10 Things You Lose Without Automation" [ref=e292] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2017/01/16/10-things-you-lose-without-automation/
+              - listitem [ref=e293]:
+                - link "12 Traits of Highly Effective Tests" [ref=e294] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2020/07/09/12-traits-of-highly-effective-tests/
+              - listitem [ref=e295]:
+                - 'link "Arrange-Act-Assert: A Pattern for Writing Good Tests" [ref=e296] [cursor=pointer]':
+                  - /url: https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/
+              - listitem [ref=e297]:
+                - link "Behavior-Driven Blasphemy" [ref=e298] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2018/09/04/behavior-driven-blasphemy/
+              - listitem [ref=e299]:
+                - link "Clicking Web Elements with Selenium WebDriver" [ref=e300] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2018/06/15/web-element-clicks-with-selenium-webdriver/
+              - listitem [ref=e301]:
+                - link "Cypress.io and the Future of Web Testing" [ref=e302] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2018/07/23/cypress-io-and-the-future-of-web-testing/
+              - listitem [ref=e303]:
+                - link "Democratizing the Screenplay Pattern" [ref=e304] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2022/12/07/democratizing-the-screenplay-pattern/
+              - listitem [ref=e305]:
+                - link "EGAD! How Do We Start Writing (Better) Tests?" [ref=e306] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2018/08/02/egad-how-do-we-start-writing-better-tests/
+              - listitem [ref=e307]:
+                - link "Gotta Catch ’em All!" [ref=e308] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2017/04/23/gotta-catch-em-all/
+              - listitem [ref=e309]:
+                - 'link "Introducing Boa Constrictor: The .NET Screenplay Pattern" [ref=e310] [cursor=pointer]':
+                  - /url: "http://Introducing Boa Constrictor: The .NET Screenplay Pattern"
+              - listitem [ref=e311]:
+                - link "JavaScript Testing with Jasmine" [ref=e312] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2018/01/26/javascript-testing-with-jasmine/
+              - listitem [ref=e313]:
+                - link "Mentoring Software Testers" [ref=e314] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2020/07/28/mentoring-software-testers/
+              - listitem [ref=e315]:
+                - link "Our Test Automation Has Problems. Should We Start Over?" [ref=e316] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2019/04/13/our-test-automation-has-problems-should-we-start-over/
+              - listitem [ref=e317]:
+                - link "Passing test inputs into pytest" [ref=e318] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2023/01/12/passing-test-inputs-into-pytest/
+              - listitem [ref=e319]:
+                - 'link "Please Hang Up and Dial Again: Handling Test Interruptions in CI/CD" [ref=e320] [cursor=pointer]':
+                  - /url: https://automationpanda.com/2017/12/21/please-hang-up-and-dial-again-handling-test-interruptions-in-ci-cd/
+              - listitem [ref=e321]:
+                - 'link "Quality Metrics 101: The Good, The Bad, and The Ugly" [ref=e322] [cursor=pointer]':
+                  - /url: https://automationpanda.com/2018/03/26/quality-metrics-101-the-good-the-bad-and-the-ugly/
+              - listitem [ref=e323]:
+                - link "Should We Rewrite Our Test Automation in Another Language" [ref=e324] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2019/08/11/should-we-rewrite-our-test-automation-in-another-language/
+                - text: "?"
+              - listitem [ref=e325]:
+                - link "Software Testing Lessons from Luigi’s Mansion" [ref=e326] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2017/11/19/software-testing-lessons-from-luigis-mansion/
+              - listitem [ref=e327]:
+                - link "Test Automation Myth-Busting" [ref=e328] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2017/10/01/test-automation-myth-busting/
+              - listitem [ref=e329]:
+                - link "The Best Programming Language for Test Automation" [ref=e330] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2017/01/21/the-best-programming-language-for-test-automation/
+              - listitem [ref=e331]:
+                - link "The Software Engineer in Test" [ref=e332] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2018/10/02/the-software-engineer-in-test/
+              - listitem [ref=e333]:
+                - link "The Testing Pyramid" [ref=e334] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2018/08/01/the-testing-pyramid/
+              - listitem [ref=e335]:
+                - 'link "To Infinity and Beyond: A Guide to Parallel Testing" [ref=e336] [cursor=pointer]':
+                  - /url: https://automationpanda.com/2018/01/21/to-infinity-and-beyond-a-guide-to-parallel-testing/
+              - listitem [ref=e337]:
+                - 'link "Tutorial: Web Testing Made Easy with Python" [ref=e338] [cursor=pointer]':
+                  - /url: https://automationpanda.com/2019/08/14/tutorial-web-testing-made-easy-with-python/
+              - listitem [ref=e339]:
+                - link "Unpredictable Test Data" [ref=e340] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2017/11/09/unpredictable-test-data/
+              - listitem [ref=e341]:
+                - link "Using Multiple Test Frameworks Simultaneously" [ref=e342] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2020/05/18/using-multiple-test-frameworks-simultaneously/
+              - listitem [ref=e343]:
+                - link "Web Element Locators for Test Automation" [ref=e344] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2019/01/15/web-element-locators-for-test-automation/
+              - listitem [ref=e345]:
+                - link "WebDriver Element Existence vs. Appearance" [ref=e346] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2019/07/16/webdriver-element-existence-vs-appearance/
+              - listitem [ref=e347]:
+                - link "Why is Automation Full of Duplicate Code?" [ref=e348] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2017/01/24/why-is-automation-full-of-duplicate-code/
+              - listitem [ref=e349]:
+                - link "Why Python is Great for Test Automation" [ref=e350] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2018/07/26/why-python-is-great-for-test-automation/
+              - listitem [ref=e351]:
+                - link "Writing Good Bug Reports" [ref=e352] [cursor=pointer]:
+                  - /url: https://automationpanda.com/2020/04/08/writing-good-bug-reports/
+            - paragraph [ref=e353]:
+              - text: I love to
+              - link "develop test automation in Python" [ref=e354] [cursor=pointer]:
+                - /url: https://automationpanda.com/2017/01/21/the-best-programming-language-for-test-automation/
+              - text: . Check out the
+              - link "Python page" [ref=e355] [cursor=pointer]:
+                - /url: https://automationpanda.com/python/
+              - text: for the
+              - link "Python Testing 101 series" [ref=e356] [cursor=pointer]:
+                - /url: https://automationpanda.com/2017/03/06/python-testing-101-introduction/
+              - text: .
+            - paragraph [ref=e357]:
+              - text: Testing is a big part of behavior-driven development. Check out the
+              - link "BDD page" [ref=e358] [cursor=pointer]:
+                - /url: https://automationpanda.com/bdd/
+              - text: for more information.
+            - paragraph [ref=e359]:
+              - text: Also, check out this great article by my friend
+              - link "Aly Sivji" [ref=e360] [cursor=pointer]:
+                - /url: https://twitter.com/CaiusSivjus
+              - text: ","
+              - 'link "Testing 101: Introduction to Testing" [ref=e361] [cursor=pointer]':
+                - /url: https://alysivji.github.io/testing-101-introduction-to-testing.html
+              - text: .
+            - generic [ref=e362]:
+              - generic [ref=e364]:
+                - heading "Share this:" [level=3] [ref=e365]
+                - list [ref=e367]:
+                  - listitem [ref=e368]:
+                    - link "Share on X (Opens in new window)" [ref=e369] [cursor=pointer]:
+                      - /url: https://automationpanda.com/testing/?share=twitter&nb=1
+                      - text: 
+                  - listitem [ref=e370]:
+                    - link "Share on Facebook (Opens in new window)" [ref=e371] [cursor=pointer]:
+                      - /url: https://automationpanda.com/testing/?share=facebook&nb=1
+                      - text: 
+                  - listitem [ref=e372]:
+                    - link "Share on LinkedIn (Opens in new window)" [ref=e373] [cursor=pointer]:
+                      - /url: https://automationpanda.com/testing/?share=linkedin&nb=1
+                      - text: 
+                  - listitem
+              - generic [ref=e375]: Loading...
+      - complementary [ref=e377]:
+        - generic [ref=e378]:
+          - complementary [ref=e379]:
+            - heading "Follow Blog via Email" [level=3] [ref=e380]
+            - generic [ref=e381]:
+              - generic [ref=e382]:
+                - paragraph [ref=e383]: Enter your email address to follow this blog and receive notifications of new posts by email.
+                - paragraph [ref=e384]:
+                  - generic [ref=e385]: "Email Address:"
+                  - textbox "Follow Blog via Email Email Address:" [ref=e386]:
+                    - /placeholder: Email Address
+                - paragraph [ref=e387]:
+                  - button "Follow" [ref=e388] [cursor=pointer]
+              - generic [ref=e389]: Join 2,320 other subscribers
+          - complementary [ref=e390]:
+            - heading "Tags" [level=3] [ref=e391]
+            - link "Agile (8 items)" [ref=e392] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/agile/
+              - text: Agile
+            - link "Angular (3 items)" [ref=e393] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/angular/
+              - text: Angular
+            - link "Atom (2 items)" [ref=e394] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/atom/
+              - text: Atom
+            - link "automation (96 items)" [ref=e395] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/automation/
+              - text: automation
+            - link "BDD (56 items)" [ref=e396] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/bdd/
+              - text: BDD
+            - link "behave (7 items)" [ref=e397] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/behave/
+              - text: behave
+            - link "best practices (43 items)" [ref=e398] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/best-practices/
+              - text: best practices
+            - link "Boa Constrictor (7 items)" [ref=e399] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/boa-constrictor/
+              - text: Boa Constrictor
+            - link "books (4 items)" [ref=e400] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/books/
+              - text: books
+            - link "C# (8 items)" [ref=e401] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/c/
+              - text: C#
+            - link "career (24 items)" [ref=e402] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/career/
+              - text: career
+            - link "Chrome (2 items)" [ref=e403] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/chrome/
+              - text: Chrome
+            - link "code review (2 items)" [ref=e404] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/code-review/
+              - text: code review
+            - link "command line (3 items)" [ref=e405] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/command-line/
+              - text: command line
+            - link "communication (8 items)" [ref=e406] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/communication/
+              - text: communication
+            - link "compiler (2 items)" [ref=e407] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/compiler/
+              - text: compiler
+            - link "conference (14 items)" [ref=e408] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/conference/
+              - text: conference
+            - link "continuous delivery (2 items)" [ref=e409] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/continuous-delivery/
+              - text: continuous delivery
+            - link "continuous integration (7 items)" [ref=e410] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/continuous-integration/
+              - text: continuous integration
+            - link "cooking (2 items)" [ref=e411] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/cooking/
+              - text: cooking
+            - link "coverage (3 items)" [ref=e412] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/coverage/
+              - text: coverage
+            - link "CSharp (7 items)" [ref=e413] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/csharp/
+              - text: CSharp
+            - link "Cucumber (12 items)" [ref=e414] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/cucumber/
+              - text: Cucumber
+            - link "Cypress (3 items)" [ref=e415] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/cypress/
+              - text: Cypress
+            - link "design patterns (3 items)" [ref=e416] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/design-patterns/
+              - text: design patterns
+            - link "development (39 items)" [ref=e417] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/development/
+              - text: development
+            - link "Django (8 items)" [ref=e418] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/django/
+              - text: Django
+            - link "end-to-end (3 items)" [ref=e419] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/end-to-end/
+              - text: end-to-end
+            - link "Example Mapping (3 items)" [ref=e420] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/example-mapping/
+              - text: Example Mapping
+            - link "exploratory testing (2 items)" [ref=e421] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/exploratory-testing/
+              - text: exploratory testing
+            - link "frameworks (3 items)" [ref=e422] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/frameworks/
+              - text: frameworks
+            - link "Gherkin (30 items)" [ref=e423] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/gherkin/
+              - text: Gherkin
+            - link "Git (6 items)" [ref=e424] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/git/
+              - text: Git
+            - link "integration (2 items)" [ref=e425] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/integration/
+              - text: integration
+            - link "Jasmine (3 items)" [ref=e426] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/jasmine/
+              - text: Jasmine
+            - link "Java (7 items)" [ref=e427] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/java/
+              - text: Java
+            - link "JavaScript (9 items)" [ref=e428] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/javascript/
+              - text: JavaScript
+            - link "Jenkins (4 items)" [ref=e429] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/jenkins/
+              - text: Jenkins
+            - link "Karma (2 items)" [ref=e430] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/karma/
+              - text: Karma
+            - link "languages (6 items)" [ref=e431] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/languages/
+              - text: languages
+            - link "mentoring (3 items)" [ref=e432] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/mentoring/
+              - text: mentoring
+            - link "metrics (7 items)" [ref=e433] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/metrics/
+              - text: metrics
+            - link "Notepad++ (4 items)" [ref=e434] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/notepad/
+              - text: Notepad++
+            - link "opportunity (3 items)" [ref=e435] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/opportunity/
+              - text: opportunity
+            - link "parallel (2 items)" [ref=e436] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/parallel/
+              - text: parallel
+            - link "performance (3 items)" [ref=e437] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/performance/
+              - text: performance
+            - link "Perl (3 items)" [ref=e438] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/perl/
+              - text: Perl
+            - link "Playwright (5 items)" [ref=e439] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/playwright/
+              - text: Playwright
+            - link "process (9 items)" [ref=e440] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/process/
+              - text: process
+            - link "Protractor (2 items)" [ref=e441] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/protractor/
+              - text: Protractor
+            - link "PyCharm (2 items)" [ref=e442] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/pycharm/
+              - text: PyCharm
+            - link "PyCon (6 items)" [ref=e443] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/pycon/
+              - text: PyCon
+            - link "PyOhio (3 items)" [ref=e444] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/pyohio/
+              - text: PyOhio
+            - link "pytest (12 items)" [ref=e445] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/pytest/
+              - text: pytest
+            - link "Python (52 items)" [ref=e446] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/python/
+              - text: Python
+            - link "quality (5 items)" [ref=e447] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/quality/
+              - text: quality
+            - link "REST (5 items)" [ref=e448] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/rest/
+              - text: REST
+            - link "Ruby (3 items)" [ref=e449] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/ruby/
+              - text: Ruby
+            - link "Screenplay (8 items)" [ref=e450] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/screenplay/
+              - text: Screenplay
+            - link "Selenium (14 items)" [ref=e451] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/selenium/
+              - text: Selenium
+            - link "shift-left (3 items)" [ref=e452] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/shift-left/
+              - text: shift-left
+            - link "SpecFlow (10 items)" [ref=e453] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/specflow/
+              - text: SpecFlow
+            - link "TDD (2 items)" [ref=e454] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/tdd/
+              - text: TDD
+            - link "teamwork (4 items)" [ref=e455] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/teamwork/
+              - text: teamwork
+            - link "test data (3 items)" [ref=e456] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/test-data/
+              - text: test data
+            - link "testing (102 items)" [ref=e457] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/testing/
+              - text: testing
+            - link "Testing Pyramid (8 items)" [ref=e458] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/testing-pyramid/
+              - text: Testing Pyramid
+            - link "Three Amigos (5 items)" [ref=e459] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/three-amigos/
+              - text: Three Amigos
+            - link "travel (2 items)" [ref=e460] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/travel/
+              - text: travel
+            - link "unit (3 items)" [ref=e461] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/unit/
+              - text: unit
+            - link "video games (3 items)" [ref=e462] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/video-games/
+              - text: video games
+            - link "Visual Studio Code (3 items)" [ref=e463] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/visual-studio-code/
+              - text: Visual Studio Code
+            - link "web (16 items)" [ref=e464] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/web/
+              - text: web
+            - link "WebDriver (11 items)" [ref=e465] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/webdriver/
+              - text: WebDriver
+            - link "writing (2 items)" [ref=e466] [cursor=pointer]:
+              - /url: https://automationpanda.com/tag/writing/
+              - text: writing
+          - complementary [ref=e467]:
+            - heading "Tweets" [level=3] [ref=e468]
+            - link "My Tweets" [ref=e469] [cursor=pointer]:
+              - /url: https://twitter.com/AutomationPanda
+    - contentinfo [ref=e470]:
+      - generic [ref=e472]:
+        - link "Start a Blog at WordPress.com" [ref=e473] [cursor=pointer]:
+          - /url: https://wordpress.com/?ref=footer_custom_blog
+        - text: .
+  - list [ref=e475]:
+    - listitem [ref=e476]:
+      - link "Subscribe" [ref=e477] [cursor=pointer]:
+        - /url: ""
+        - img [ref=e478]
+        - text: Subscribe
+    - listitem [ref=e480] [cursor=pointer]:
+      - img [ref=e481]

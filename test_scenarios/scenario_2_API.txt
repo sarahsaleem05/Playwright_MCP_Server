@@ -1,0 +1,9 @@
+Generate a playwright API test for the following scenario:
+1. Define the API endpoint URL: 'https://fakestoreapi.com/products/1'
+2. Send a GET request to the endpoint.
+3. Verify the response status is 200.
+4. Validate the response contains these keys: 'id', 'title', 'price', 'category', and 'description'
+5. Optionally validate the data types using a JSON schema (Ajv)
+6. Log the product title and price to the console.
+
+------------
