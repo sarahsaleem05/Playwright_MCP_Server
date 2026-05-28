@@ -1,4 +1,4 @@
-# 🤖 AI-Powered Test Automation with Playwright MCP, GitHub Copilot & VSCode (using TypeScript)
+# 🤖 AI-Powered Test Automation Framework with Playwright MCP, GitHub Copilot & VSCode (using TypeScript)
 
 
 ## 📋 Project Overview
